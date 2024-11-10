@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Route requests to the router script
+RewriteRule ^dashboard/student/teacher/([0-9]+)/input-schedule$ dashboard/student/teacher/input-schedule.php?teacher_id=$1 [L,QSA]
